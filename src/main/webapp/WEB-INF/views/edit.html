@@ -24,6 +24,9 @@
             <label>Inventory</label>
             <input type="text" th:field="*{inventory}"/>
         </div>
+        <div>
+            <label>Category</label>
+            <br>
         <select name="category" id="category" th:field="*{category}">
             <option value="Others">Others</option>
             <option value="Apple iPhone">Apple iPhone</option>
@@ -38,6 +41,7 @@
             <option value="Laptop Lenovo">Laptop Lenovo</option>
             <option value="Laptop Dell">Laptop Dell</option>
         </select>
+        </div>
 
         <input type="submit" id="save" value="Save">
     </form>
