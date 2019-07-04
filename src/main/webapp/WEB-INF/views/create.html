@@ -14,17 +14,36 @@
         <div>
             <label>ID</label>
             <input type="text" th:field="*{id}"/>
-        </div>        <div>
+        </div>
+        <div>
             <label>Name</label>
             <input type="text" th:field="*{name}"/>
         </div>
         <div>
             <label>Price</label>
-            <input type="text" th:field="*{price}"/>
+            <input type="number" th:field="*{price}"/>
+        </div>
+        <div>
+            <label>Inventory</label>
+            <input type="number" th:field="*{inventory}"/>
         </div>
         <div>
             <label>Category</label>
-            <input type="text" th:field="*{categoryName}"/>
+            <br><br>
+            <select name="category" id="category" th:field="*{category}">
+                <option value="Others">Others</option>
+                <option value="Apple iPhone">Apple iPhone</option>
+                <option value="Apple iPad">Apple iPad</option>
+                <option value="Apple Macbook">Apple Macbook</option>
+                <option value="Apple Watch">Apple Watch</option>
+                <option value="Samsung Galaxy S">Samsung Galaxy S</option>
+                <option value="Samsung Galaxy Note">Samsung Galaxy Note</option>
+                <option value="Samsung Galaxy A">Samsung Galaxy A</option>
+                <option value="Samsung Galaxy Tab">Samsung Galaxy Tab</option>
+                <option value="Laptop Sony">Laptop Sony</option>
+                <option value="Laptop Lenovo">Laptop Lenovo</option>
+                <option value="Laptop Dell">Laptop Dell</option>
+            </select>
         </div>
 
         <input type="submit" id="save" value="Save">

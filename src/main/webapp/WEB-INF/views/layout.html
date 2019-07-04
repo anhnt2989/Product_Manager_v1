@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
 <head th:fragment="head">
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Products Manager</title>
 
     <style type="text/css">
+
         h3{
             background-color: blue;
             color: white;
@@ -17,6 +18,12 @@
 
         footer{
             margin: 10px 0;
+        }
+
+        #category {
+            width: 200px;
+            height: 30px;
+            font-size: medium;
         }
 
         #search {
@@ -67,7 +74,7 @@
             color: white;
         }
 
-        input[type=text]{
+        input[type=text],input[type=number]{
             width: 100%;
             padding: 12px 0;
             margin: 8px 0;

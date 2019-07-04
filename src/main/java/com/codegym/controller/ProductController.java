@@ -1,6 +1,8 @@
 package com.codegym.controller;
 
 import com.codegym.model.Product;
+import com.codegym.service.CategoryService;
+import com.codegym.service.CategoryServiceImpl;
 import com.codegym.service.ProductService;
 import com.codegym.service.ProductServiceImpl;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 @Controller
 public class ProductController {
     private ProductService productService = new ProductServiceImpl();
+    private CategoryService categoryService = new CategoryServiceImpl();
 
     @GetMapping("/")
     public String index(Model model) {
@@ -23,6 +26,7 @@ public class ProductController {
     @GetMapping("/product/create")
     public String create(Model model) {
         model.addAttribute("product", new Product());
+        model.addAttribute("categories", categoryService.findAll());
         return "create";
     }
 

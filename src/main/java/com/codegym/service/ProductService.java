@@ -11,8 +11,6 @@ public interface ProductService {
 
     Product findById(int id);
 
-    Product findByCategoryId(int categoryId);
-
     void update(int id, Product product);
 
     void remove(int id);

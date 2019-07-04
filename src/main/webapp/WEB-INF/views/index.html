@@ -31,7 +31,7 @@
         <td th:text="${row.getName()}"></td>
         <td th:text="${row.getPrice()}"></td>
         <td th:text="${row.getInventory()}"></td>
-        <td th:text="${row.getCategoryName()}"></td>
+        <td th:text="${row.getCategory()}"></td>
         <td style="text-align: center"><a th:href="@{/product/{id}/edit(id=${row.getId()})}">edit</a></td>
         <td style="text-align: center"><a th:href="@{/product/{id}/delete(id=${row.getId()})}">delete</a></td>
         <td style="text-align: center"><a th:href="@{/product/{id}/view(id=${row.getId()})}">view</a></td>

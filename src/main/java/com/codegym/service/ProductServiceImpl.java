@@ -29,11 +29,6 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public Product findByCategoryId(int categoryId) {
-        return products.get(categoryId);
-    }
-
-    @Override
     public void update(int id, Product product) {
         products.put(id, product);
     }
